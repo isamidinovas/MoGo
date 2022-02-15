@@ -257,3 +257,31 @@ h6 {
   transform: translate3d(0, -50%, 0);
   transition: opacity 0.2s linear;
 }
+
+/*statistics*/
+.statistics {
+  background-color: #95e1d3;
+}
+.stat {
+  display: flex;
+}
+.stat_item {
+  flex: 1 1 0;
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: #fff;
+  padding: 70px 25px;
+}
+.stat_item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+.stat_count {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stat_text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
