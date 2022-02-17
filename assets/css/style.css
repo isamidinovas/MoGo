@@ -285,3 +285,30 @@ h6 {
   font-size: 14px;
   text-transform: uppercase;
 }
+
+/*stics*/
+
+.stics {
+  display: flex;
+}
+.stics_item {
+  flex: 1 1 0;
+  padding-left: 90px;
+  position: relative;
+}
+.stics_icon {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 0;
+}
+.stics_title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+.stics_text {
+  font-size: 15px;
+  color: #999;
+}
