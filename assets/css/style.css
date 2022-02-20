@@ -492,3 +492,11 @@ hr {
   transform: rotate(135deg);
   right: 0;
 }
+/*Logos*/
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.margin {
+  margin-top: 60px;
+}
