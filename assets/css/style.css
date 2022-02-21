@@ -497,6 +497,7 @@ hr {
 .logos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .margin {
   margin-top: 60px;
@@ -526,3 +527,5 @@ hr {
   color: #fff;
   background-color: #f38181;
 }
+
+/*Works*/
