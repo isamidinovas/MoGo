@@ -237,6 +237,7 @@ hr {
   width: 380px;
 }
 .card_inner {
+  position: relative;
   background-color: #95e1d3;
   background-color: #95e1d3;
 }
@@ -499,4 +500,29 @@ hr {
 }
 .margin {
   margin-top: 60px;
+}
+/*Social*/
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social_item {
+  width: 55px;
+  height: 55px;
+  padding: 12px 10px;
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+  text-decoration: none;
+  color: #f38181;
+  font-size: 30px;
+  line-height: 1;
+  transition: background 0.1s linear, color 0.1s linear;
+}
+.social_item:last-child {
+  border-right: 0;
+}
+.social_item:hover {
+  color: #fff;
+  background-color: #f38181;
 }
