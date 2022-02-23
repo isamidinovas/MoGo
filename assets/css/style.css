@@ -201,7 +201,7 @@ hr {
   background: #f8f8f8;
 }
 .section_clients {
-  background: #f5f5f5 url("../imgs/images/images/images/fon_09.jpg");
+  background: url("../imgs/images/images/images/fon_09.jpg") no-repeat;
 }
 .section_header {
   width: 100%;
