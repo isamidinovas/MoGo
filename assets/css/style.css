@@ -867,7 +867,9 @@ hr {
   padding-left: 20px;
 }
 .blogs_title {
-  line-height:1.2 ;
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 5px;
   color: #333;
   font-size: 12px;
   text-decoration: none;
@@ -881,4 +883,18 @@ hr {
   color: #999;
   font-style: italic;
   font-weight: 300;
+}
+/*INSTAGRAM*/
+
+.instagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.instagram_item {
+  border-bottom: 1px solid #fff;
+  width: 32.3333%;
+}
+.instagram_item img {
+  display: block;
 }
