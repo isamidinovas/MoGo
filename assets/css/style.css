@@ -638,9 +638,10 @@ hr {
 /*BLOG*/
 .blog {
   display: flex;
+  justify-content: space-between;
 }
 .blog_item {
-  width: 30%;
+  width: 31%;
 }
 .blog_header {
   position: relative;
@@ -687,7 +688,7 @@ hr {
   text-decoration: underline;
 }
 .blog_text {
-  font-size: 15px;
+  font-size: 13px;
   color: #999;
 }
 .blog_footer {
