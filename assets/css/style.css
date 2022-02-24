@@ -344,16 +344,20 @@ hr {
 /*stics*/
 
 .stics {
+  flex-wrap: wrap;
   display: flex;
 }
 .section_header {
   padding-top: 80px;
 }
 .stics_item {
-  flex: 1 1 0;
-  padding-left: 70px;
+  margin-bottom: 40px;
+  width: 33.33333%;
   position: relative;
-  padding-right: 20px;
+  padding: 0 35px 40px 86px;
+}
+.stics_item_border {
+  border-bottom: 1px solid #e5e5e5;
 }
 .stics_icon {
   position: absolute;
@@ -950,6 +954,14 @@ hr {
   .stat_item:last-child {
     border-right: 0;
   }
+  /*STICS*/
+  .stics_item {
+    width: 50%;
+    padding-bottom: 0;
+  }
+  .stics_item_border {
+    border-bottom: 0;
+  }
 }
 @media (max-width: 770px) {
   /*NAV*/
@@ -981,6 +993,19 @@ hr {
   }
   .slider_item.active::before {
     width: 50%;
+  }
+
+  .stics {
+    justify-content: center;
+  }
+  .stics_item {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 55px;
+    padding-right: 0;
+  }
+  .stics_icon {
+    left: 0;
   }
 }
 @media (max-width: 575px) {
