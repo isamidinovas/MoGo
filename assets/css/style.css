@@ -318,6 +318,7 @@ hr {
 }
 .stat {
   display: flex;
+  flex-wrap: wrap;
 }
 .stat_item {
   flex: 1 1 0;
@@ -934,6 +935,21 @@ hr {
   .intro_title {
     font-size: 80px;
   }
+
+  /*STAT*/
+  .stat {
+    justify-content: center;
+  }
+  .stat_item {
+    border: 0;
+    flex: none;
+    width: 33.33333%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .stat_item:last-child {
+    border-right: 0;
+  }
 }
 @media (max-width: 770px) {
   /*NAV*/
@@ -941,6 +957,24 @@ hr {
     display: none;
   }
 
+  /*SECTION*/
+  .section {
+    padding: 40px 0;
+  }
+
+  /*CARD*/
+  .card {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .card_item {
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: 30px;
+  }
+  .card_item:last-child {
+    margin-bottom: 0;
+  }
   /*SLIDER*/
   .slider_text {
     display: none;
@@ -956,5 +990,30 @@ hr {
   }
   .intro_title {
     font-size: 40px;
+  }
+
+  /*SECTION*/
+  .section_title {
+    font-size: 24px;
+  }
+  .section_header {
+    margin-bottom: 50px;
+  }
+  .section_suptitle {
+    font-size: 20px;
+  }
+  .section_title::after {
+    margin: 20px auto;
+  }
+  /*STAT*/
+  .stat_item {
+    width: 100%;
+    border-bottom: 1px solid #b5eae0;
+  }
+  .stat_item:last-child {
+    border-bottom: 0;
+  }
+  .stat_count {
+    font-size: 52px;
   }
 }
