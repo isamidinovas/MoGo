@@ -385,6 +385,8 @@ hr {
 }
 .devices_item {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .devices_item--iphone {
   position: absolute;
@@ -973,6 +975,9 @@ hr {
   .section {
     padding: 40px 0;
   }
+  .section--devices {
+    padding-bottom: 0;
+  }
 
   /*CARD*/
   .card {
@@ -1040,5 +1045,14 @@ hr {
   }
   .stat_count {
     font-size: 52px;
+  }
+  /*DEVICES*/
+  .devices {
+    max-width: 320px;
+  }
+  .devices_item--iphone {
+    width: 180px;
+    bottom: -50px;
+    right: -80px;
   }
 }
