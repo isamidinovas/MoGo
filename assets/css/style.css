@@ -1074,6 +1074,14 @@ hr {
   .reviews_author {
     font-size: 20px;
   }
+  /*WORKS*/
+  .works {
+    flex-wrap: wrap;
+  }
+  .works_col {
+    flex: none;
+    width: 50%;
+  }
 }
 @media (max-width: 575px) {
   /*INTRO*/
@@ -1137,5 +1145,13 @@ hr {
   }
   .logos_img {
     margin: 0 auto;
+  }
+  /*WORKS*/
+  .works {
+    flex-wrap: wrap;
+  }
+  .works_col {
+    flex: none;
+    width: 100%;
   }
 }
