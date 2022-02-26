@@ -204,7 +204,7 @@ hr {
   background: #f8f8f8;
 }
 .section_clients {
-  background: url("../imgs/images/images/images/fon_09.jpg") center no-repeat;
+  background: url("../imgs/images/images/images/fonn_09.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -1002,6 +1002,18 @@ hr {
   .reviews_item {
     padding-left: 190px;
   }
+  /*CLIENTS*/
+  .clients {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .clients_item {
+    width: 100%;
+    padding-right: 0;
+  }
+  .clients_item:last-child {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 770px) {
   /*NAV*/
@@ -1153,5 +1165,17 @@ hr {
   .works_col {
     flex: none;
     width: 100%;
+  }
+
+  /*CLIENTS*/
+  .clients_photo {
+    position: static;
+  }
+  .clients_item {
+    padding-left: 0;
+    text-align: center;
+  }
+  .clients_text::before {
+    margin: 15px auto;
   }
 }
