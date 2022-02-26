@@ -682,6 +682,7 @@ hr {
 
 /*BLOG*/
 .blog {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -1093,6 +1094,18 @@ hr {
   .works_col {
     flex: none;
     width: 50%;
+  }
+  /*BLOG*/
+  .blog {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .blog_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .blog_item:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 575px) {
