@@ -92,7 +92,6 @@ hr {
   z-index: 1000;
 }
 .header_fixed {
-  padding: 10px 0;
   background-color: #eb8b8b;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -100,6 +99,9 @@ hr {
   right: 0;
   left: 0;
   transform: translate3d(0 0 0);
+}
+.header.active {
+  background-color: #eb8b8b;
 }
 
 .header_inner {
@@ -145,13 +147,6 @@ hr {
 .nav_link:hover {
   color: #fce38a;
 }
-.nav_link:hover::after,
-.nav_link.active::after {
-  opacity: 1;
-}
-.nav_link.active {
-  color: #fce38a;
-}
 
 /*NAV_TOGGLE*/
 .nav_toggle {
@@ -179,6 +174,10 @@ hr {
   bottom: 0;
   left: 0;
   margin: auto;
+  transition: background 0.2s linear;
+}
+.nav_toggle.active .nav_toggle_item {
+  background: none;
 }
 .nav_toggle_item::before,
 .nav_toggle_item::after {
@@ -189,12 +188,22 @@ hr {
   left: 0;
   z-index: 1;
   background-color: #fff;
+  transition: transform 0.2s linear;
 }
 .nav_toggle_item::before {
   top: -8px;
 }
 .nav_toggle_item::after {
   bottom: -8px;
+}
+.nav_toggle.active .nav_toggle_item::before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav_toggle.active .nav_toggle_item::after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
 /*Button*/
 .btn {
@@ -1108,11 +1117,11 @@ hr {
   }
   /*HEADER*/
   .header {
-    padding-top: 10px;
+    padding: 10px 0;
   }
   /*NAV*/
   nav {
-    /*display: none;*/
+    display: none;
     width: 100%;
     position: absolute;
     top: 100%;
