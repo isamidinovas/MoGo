@@ -47,6 +47,8 @@ hr {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  min-height: 820px;
+  position: relative;
   background: url("../imgs/images/img01_01.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -89,6 +91,7 @@ hr {
   right: 0;
   z-index: 1000;
 }
+
 
 .header_inner {
   text-align: center;
@@ -138,6 +141,44 @@ hr {
 }
 .nav_link.active {
   color: #fce38a;
+}
+
+/*NAV_TOGGLE*/
+.nav_toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1;
+  width: 30px;
+  padding: 10px 0;
+}
+.nav_toggle_item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.nav_toggle_item::before,
+.nav_toggle_item::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+.nav_toggle_item::before {
+  top: -8px;
+}
+.nav_toggle_item::after {
+  bottom: -8px;
 }
 /*Button*/
 .btn {
@@ -1045,6 +1086,10 @@ hr {
   }
 }
 @media (max-width: 770px) {
+  /*INTRO*/
+  .intro {
+    min-height: 650px;
+  }
   /*NAV*/
   nav {
     display: none;
