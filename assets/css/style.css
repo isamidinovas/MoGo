@@ -127,6 +127,7 @@ hr {
   margin: 0 10px;
   position: relative;
   transition: color 0.1s linear;
+  text-align: left;
 }
 .nav_link::after {
   content: "";
@@ -154,7 +155,13 @@ hr {
 
 /*NAV_TOGGLE*/
 .nav_toggle {
+  display: none;
   position: absolute;
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
   top: 24px;
   right: 24px;
   z-index: 1;
@@ -1099,9 +1106,26 @@ hr {
   .intro {
     min-height: 650px;
   }
+  /*HEADER*/
+  .header {
+    padding-top: 10px;
+  }
   /*NAV*/
   nav {
-    display: none;
+    /*display: none;*/
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eb8b8b;
+  }
+  .nav_link {
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
+  }
+  .nav_toggle {
+    display: block;
   }
 
   /*SECTION*/
